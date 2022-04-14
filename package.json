@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "test": "jest",
     "dev": "postcss ./src/dev.css -o docs/css/style.css --watch",

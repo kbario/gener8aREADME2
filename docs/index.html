@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gener8aREADME2</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="w-screen h-screen bg-zinc-200">
+    <nav class="bg-zinc-800 flex justify-between h-20 items-center px-5">
+      <h1 class="text-4xl text-zinc-200">Gener8aREADME2</h1>
+    </nav>
+    <main class="flex max-w-4xl mx-auto w-full p-5 flex-col">
+      <form action="" class="flex flex-col gap-3 w-full">
+        <div id="repo-name-div" class="flex flex-col gap-2">
+          <label for="repo-name">What's your repo's name?</label>
+          <input
+            id="repo-name"
+            type="text"
+            class="focus:outline-none border border-zinc-300 p-1"
+            placeholder="Repo/Project Name"
+          />
+        </div>
+        <fieldset class="flex flex-col gap-2">
+          <label for="license-select">
+            What license do you want to give the repo?
+          </label>
+          <select id="license-select" class="flex"></select>
+          <div
+            id="license-description-div"
+            class="w-full group flex flex-col justify-start items-start hover:cursor-pointer"
+          >
+            <div class="flex items-center justify-start gap-1">
+              <h1>Description</h1>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 transition-all duration-300"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <p id="license-description" class="hidden"></p>
+          </div>
+          <div id="license-name-input" class="hidden flex-col">
+            <label>What name would you like on the license?</label>
+            <input
+              class="px-1"
+              type="text"
+              placeholder="separate multiple with a comma"
+            />
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <script type="module" src="./js/licenseIndex.js"></script>
+    <script type="module" src="./js/licenseDescription.js"></script>
+    <script type="module" src="./js/licenseBuild.js"></script>
+  </body>
+</html>
